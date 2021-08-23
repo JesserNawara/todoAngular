@@ -2,11 +2,8 @@
   "name": "angular-app",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "start": "ng serve --open",
+    "server": "nodemon server/server.js"
   },
   "private": true,
   "dependencies": {
@@ -18,14 +15,30 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "@igniteui/material-icons-extended": "^2.8.0",
+    "@juggle/resize-observer": "^3.3.0",
+    "@prisma/client": "^2.30.0-dev.35",
+    "angular-in-memory-web-api": "^0.11.0",
+    "body-parser": "^1.19.0",
+    "classlist.js": "1.1.20150312",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "hammerjs": "^2.0.8",
+    "igniteui-angular": "^12.1.2",
+    "jszip": "^3.6.0",
+    "minireset.css": "~0.0.4",
+    "nodemon": "^2.0.12",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
+    "web-animations-js": "^2.3.2",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.2.1",
     "@angular/cli": "~12.2.1",
     "@angular/compiler-cli": "~12.2.0",
+    "@igniteui/angular-schematics": "~12.1.810",
+    "@types/hammerjs": "^2.0.40",
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.11.1",
     "jasmine-core": "~3.8.0",
@@ -34,6 +47,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "prisma": "^2.30.0-dev.35",
     "typescript": "~4.3.5"
   }
 }

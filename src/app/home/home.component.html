@@ -1,0 +1,14 @@
+<div>
+    <input placeholder="test" #a>
+    <button id="test" (click)="addTodo(a.value)" >press me</button>
+</div>
+
+<div class="hana">
+<div class="todos" *ngFor="let todo of todos" >
+    <br>
+    <div class="todoName"> {{todo?.text}} </div> 
+    <button class="delete" (click)="deleteTodo(todo.id)">delete </button>
+    <button (click)="updateTodo(todo.id, update.value)" >update</button>
+    <input type="text" #update>
+</div>
+</div>
